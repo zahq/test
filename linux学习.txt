@@ -1,0 +1,58 @@
+cd usr		切换到该目录下usr目录 
+cd ../		切换到上一层目录 	
+cd /		切换到系统根目录 	
+cd ~		切换到用户主目录 	
+cd -		切换到上一个所在目录
+
+mkdir test
+ls -a
+find /root -name ‘test*’
+mv oldTest newTest     mv的语法不仅可以对目录进行重命名而且也可以对各种文件，压缩包等进行重命名的操作
+mv newTest /usr        mv语法不仅可以对目录进行剪切操作，对文件和压缩包等都可执行剪切操作
+cp -r /usr/newTest /test   cp命令不仅可以拷贝目录还可以拷贝文件，压缩包等，拷贝文件和压缩包时不	用写-r递归
+rm -r newTest
+rm -rf newTest  无论删除任何目录或文件，都直接使用rm -rf 目录/文件/压缩包
+
+touch aaa.txt
+cat/more/less/tail 文件
+使用cat查看/etc/sudo.conf文件，只能显示最后一屏内容
+使用more查看/etc/sudo.conf文件，可以显示百分比，回车可以向下一行，	空格可以向下一页，q可以退出查看
+使用less查看/etc/sudo.conf文件，可以使用键盘上的PgUp和PgDn向上	和向下翻页，q结束查看
+使用tail -10 查看/etc/sudo.conf文件的后10行，Ctrl+C结束 
+命令 tail -f 文件 可以对某个文件进行动态监控，例如tomcat的日志文件，会随着程序的运行，日志会变化，可以使用tail -f catalina-2016-11-11.log 监控文件的变化 
+vim aaa.txt   vim 文件------>进入文件----->命令模式------>按i进入编辑模式----->编辑文件	------->按Esc进入底行模式----->输入:wq/q!
+rm -rf 文件
+
+tar -zcvf xxx.tar.gz aaa.txt bbb.txt ccc.txt
+或：tar -zcvf xxx.tar.gz /test/* 或：tar -zcvf xxx.tar.gz *.txt  或：tar -zcvf xxx.tar.gz ./*
+tar -xvf xxx.tar.gz
+tar -xvf xxx.tar.gz -C /usr    -C代表指定解压的位置
+pwd  显示当前所在位置
+grep to sudo.conf --color
+chmod u=rwx,g=rw,o=r aaa.txt       chmod 764 aaa.txt
+rpm与软件相关命令
+
+ctrl+l 清屏
+ctrl+d 退出mysql
+
+mkdir -pv ./abc/123
+more  b 返回上一屏
+less -mN
+cp -r ./abc ./123
+cp -b a.txt b.txt  将之前的文件备份
+i shift+i
+a shift+a
+o shift+o
+yy
+p
+gg shift+gg
+dd
+grep -i XXX log.txt 忽略大小写
+ctrl+C 退出ping
+
+alter table person add tel varchar(10) not null;
+alter table person add tel varchar(10) not null first;
+alter table person add tel varchar(10) not after age;
+alter table person drop tel,drop age;
+alter table person modify tel varchar(20) not null;
+alter table person change tel telphone varchar(20) not null;
