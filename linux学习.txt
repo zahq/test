@@ -56,3 +56,4 @@ alter table person add tel varchar(10) not after age;
 alter table person drop tel,drop age;
 alter table person modify tel varchar(20) not null;
 alter table person change tel telphone varchar(20) not null;
+≤‚ ‘
