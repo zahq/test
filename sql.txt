@@ -1,0 +1,79 @@
+SELECT * FROM `student` WHERE `name` is not null and `name` <>''
+INSERT INTO `student`values(7,'','38')
+SELECT *
+  FROM `student` 
+ WHERE `name` is not null
+ GROUP BY `sex` 
+HAVING `sex` is not null
+ ORDER BY `sex` 
+ LIMIT offset,row_count
+
+UPDATE `student`  SET name='00' WHERE id=1
+INSERT INTO `student` values('8','ff','30')
+DELETE FROM `student`  WHERE id = 7 
+
+REPLACE INTO `student` values(9,'fff','300')
+
+
+show tables
+show DATABASES 
+
+describe student
+
+alter table `student` add address VARCHAR(50)
+alter table `student` change address addre VARCHAR (40)
+alter table `student` modify addre VARCHAR (50)
+alter table `student` drop addre
+
+
+CREATE VIEW student_view  AS select * from `student` 
+ALTER  VIEW student_view  AS select `name` as Name,`sex` as Sex from `student` 
+drop view student_view 
+
+DELIMITER// 
+ CREATE FUNCTION hello_world(num INT) 
+RETURNS INT 
+BEGIN
+DECLARE nu INT;
+set nu = 0;
+   set nu=num+1;RETURN nu;
+END//
+DELIMITER ;  
+ 
+SELECT * from `student` where id <hello_world(5)
+
+DELIMITER //
+CREATE PROCEDURE student_pro(OUT param1 INT)
+BEGIN
+	SELECT COUNT(*) INTO param1 FROM `student`;
+END //
+
+DELIMITER ;
+CALL student_pro(@b);
+SELECT @b;
+
+DELIMITER //
+CREATE PROCEDURE student_pro1 (inout ttt INT)
+BEGIN
+	SELECT COUNT(*) INTO ttt from `student` WHERE id <5;
+END //
+CALL student_pro1(@b);
+SELECT @b;
+
+CREATE table teacher (
+  id int PRIMARY key not null,name VARCHAR (20),sex VARCHAR (10)
+)
+SELECT * FROM teacher
+DESCRIBE teacher
+INSERT INTO teacher values('8','ff','30')
+
+DELIMITER //
+create trigger tg1
+after insert on teacher
+for each row 
+begin
+update `student` set name='这样吧' where id=1;
+end//
+INSERT INTO teacher values('98','ff','30')
+
+/*在系统管理或者数据库管理中，经常要周期性的执行某一个命令或者SQL语句。这个时候就会用到mysql事件，使用这个功能必须保证是mysql的版本是5.1以上*/
