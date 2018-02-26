@@ -1,45 +1,45 @@
-cd usr		ÇĞ»»µ½¸ÃÄ¿Â¼ÏÂusrÄ¿Â¼ 
-cd ../		ÇĞ»»µ½ÉÏÒ»²ãÄ¿Â¼ 	
-cd /		ÇĞ»»µ½ÏµÍ³¸ùÄ¿Â¼ 	
-cd ~		ÇĞ»»µ½ÓÃ»§Ö÷Ä¿Â¼ 	
-cd -		ÇĞ»»µ½ÉÏÒ»¸öËùÔÚÄ¿Â¼
+cd usr		åˆ‡æ¢åˆ°è¯¥ç›®å½•ä¸‹usrç›®å½• 
+cd ../		åˆ‡æ¢åˆ°ä¸Šä¸€å±‚ç›®å½• 	
+cd /		åˆ‡æ¢åˆ°ç³»ç»Ÿæ ¹ç›®å½• 	
+cd ~		åˆ‡æ¢åˆ°ç”¨æˆ·ä¸»ç›®å½• 	
+cd -		åˆ‡æ¢åˆ°ä¸Šä¸€ä¸ªæ‰€åœ¨ç›®å½•
 
 mkdir test
 ls -a
-find /root -name ¡®test*¡¯
-mv oldTest newTest     mvµÄÓï·¨²»½ö¿ÉÒÔ¶ÔÄ¿Â¼½øĞĞÖØÃüÃû¶øÇÒÒ²¿ÉÒÔ¶Ô¸÷ÖÖÎÄ¼ş£¬Ñ¹Ëõ°üµÈ½øĞĞÖØÃüÃûµÄ²Ù×÷
-mv newTest /usr        mvÓï·¨²»½ö¿ÉÒÔ¶ÔÄ¿Â¼½øĞĞ¼ôÇĞ²Ù×÷£¬¶ÔÎÄ¼şºÍÑ¹Ëõ°üµÈ¶¼¿ÉÖ´ĞĞ¼ôÇĞ²Ù×÷
-cp -r /usr/newTest /test   cpÃüÁî²»½ö¿ÉÒÔ¿½±´Ä¿Â¼»¹¿ÉÒÔ¿½±´ÎÄ¼ş£¬Ñ¹Ëõ°üµÈ£¬¿½±´ÎÄ¼şºÍÑ¹Ëõ°üÊ±²»	ÓÃĞ´-rµİ¹é
+find /root -name â€˜test*â€™
+mv oldTest newTest     mvçš„è¯­æ³•ä¸ä»…å¯ä»¥å¯¹ç›®å½•è¿›è¡Œé‡å‘½åè€Œä¸”ä¹Ÿå¯ä»¥å¯¹å„ç§æ–‡ä»¶ï¼Œå‹ç¼©åŒ…ç­‰è¿›è¡Œé‡å‘½åçš„æ“ä½œ
+mv newTest /usr        mvè¯­æ³•ä¸ä»…å¯ä»¥å¯¹ç›®å½•è¿›è¡Œå‰ªåˆ‡æ“ä½œï¼Œå¯¹æ–‡ä»¶å’Œå‹ç¼©åŒ…ç­‰éƒ½å¯æ‰§è¡Œå‰ªåˆ‡æ“ä½œ
+cp -r /usr/newTest /test   cpå‘½ä»¤ä¸ä»…å¯ä»¥æ‹·è´ç›®å½•è¿˜å¯ä»¥æ‹·è´æ–‡ä»¶ï¼Œå‹ç¼©åŒ…ç­‰ï¼Œæ‹·è´æ–‡ä»¶å’Œå‹ç¼©åŒ…æ—¶ä¸	ç”¨å†™-ré€’å½’
 rm -r newTest
-rm -rf newTest  ÎŞÂÛÉ¾³ıÈÎºÎÄ¿Â¼»òÎÄ¼ş£¬¶¼Ö±½ÓÊ¹ÓÃrm -rf Ä¿Â¼/ÎÄ¼ş/Ñ¹Ëõ°ü
+rm -rf newTest  æ— è®ºåˆ é™¤ä»»ä½•ç›®å½•æˆ–æ–‡ä»¶ï¼Œéƒ½ç›´æ¥ä½¿ç”¨rm -rf ç›®å½•/æ–‡ä»¶/å‹ç¼©åŒ…
 
 touch aaa.txt
-cat/more/less/tail ÎÄ¼ş
-Ê¹ÓÃcat²é¿´/etc/sudo.confÎÄ¼ş£¬Ö»ÄÜÏÔÊ¾×îºóÒ»ÆÁÄÚÈİ
-Ê¹ÓÃmore²é¿´/etc/sudo.confÎÄ¼ş£¬¿ÉÒÔÏÔÊ¾°Ù·Ö±È£¬»Ø³µ¿ÉÒÔÏòÏÂÒ»ĞĞ£¬	¿Õ¸ñ¿ÉÒÔÏòÏÂÒ»Ò³£¬q¿ÉÒÔÍË³ö²é¿´
-Ê¹ÓÃless²é¿´/etc/sudo.confÎÄ¼ş£¬¿ÉÒÔÊ¹ÓÃ¼üÅÌÉÏµÄPgUpºÍPgDnÏòÉÏ	ºÍÏòÏÂ·­Ò³£¬q½áÊø²é¿´
-Ê¹ÓÃtail -10 ²é¿´/etc/sudo.confÎÄ¼şµÄºó10ĞĞ£¬Ctrl+C½áÊø 
-ÃüÁî tail -f ÎÄ¼ş ¿ÉÒÔ¶ÔÄ³¸öÎÄ¼ş½øĞĞ¶¯Ì¬¼à¿Ø£¬ÀıÈçtomcatµÄÈÕÖ¾ÎÄ¼ş£¬»áËæ×Å³ÌĞòµÄÔËĞĞ£¬ÈÕÖ¾»á±ä»¯£¬¿ÉÒÔÊ¹ÓÃtail -f catalina-2016-11-11.log ¼à¿ØÎÄ¼şµÄ±ä»¯ 
-vim aaa.txt   vim ÎÄ¼ş------>½øÈëÎÄ¼ş----->ÃüÁîÄ£Ê½------>°´i½øÈë±à¼­Ä£Ê½----->±à¼­ÎÄ¼ş	------->°´Esc½øÈëµ×ĞĞÄ£Ê½----->ÊäÈë:wq/q!
-rm -rf ÎÄ¼ş
+cat/more/less/tail æ–‡ä»¶
+ä½¿ç”¨catæŸ¥çœ‹/etc/sudo.confæ–‡ä»¶ï¼Œåªèƒ½æ˜¾ç¤ºæœ€åä¸€å±å†…å®¹
+ä½¿ç”¨moreæŸ¥çœ‹/etc/sudo.confæ–‡ä»¶ï¼Œå¯ä»¥æ˜¾ç¤ºç™¾åˆ†æ¯”ï¼Œå›è½¦å¯ä»¥å‘ä¸‹ä¸€è¡Œï¼Œ	ç©ºæ ¼å¯ä»¥å‘ä¸‹ä¸€é¡µï¼Œqå¯ä»¥é€€å‡ºæŸ¥çœ‹
+ä½¿ç”¨lessæŸ¥çœ‹/etc/sudo.confæ–‡ä»¶ï¼Œå¯ä»¥ä½¿ç”¨é”®ç›˜ä¸Šçš„PgUpå’ŒPgDnå‘ä¸Š	å’Œå‘ä¸‹ç¿»é¡µï¼Œqç»“æŸæŸ¥çœ‹
+ä½¿ç”¨tail -10 æŸ¥çœ‹/etc/sudo.confæ–‡ä»¶çš„å10è¡Œï¼ŒCtrl+Cç»“æŸ 
+å‘½ä»¤ tail -f æ–‡ä»¶ å¯ä»¥å¯¹æŸä¸ªæ–‡ä»¶è¿›è¡ŒåŠ¨æ€ç›‘æ§ï¼Œä¾‹å¦‚tomcatçš„æ—¥å¿—æ–‡ä»¶ï¼Œä¼šéšç€ç¨‹åºçš„è¿è¡Œï¼Œæ—¥å¿—ä¼šå˜åŒ–ï¼Œå¯ä»¥ä½¿ç”¨tail -f catalina-2016-11-11.log ç›‘æ§æ–‡ä»¶çš„å˜åŒ– 
+vim aaa.txt   vim æ–‡ä»¶------>è¿›å…¥æ–‡ä»¶----->å‘½ä»¤æ¨¡å¼------>æŒ‰iè¿›å…¥ç¼–è¾‘æ¨¡å¼----->ç¼–è¾‘æ–‡ä»¶	------->æŒ‰Escè¿›å…¥åº•è¡Œæ¨¡å¼----->è¾“å…¥:wq/q!
+rm -rf æ–‡ä»¶
 
 tar -zcvf xxx.tar.gz aaa.txt bbb.txt ccc.txt
-»ò£ºtar -zcvf xxx.tar.gz /test/* »ò£ºtar -zcvf xxx.tar.gz *.txt  »ò£ºtar -zcvf xxx.tar.gz ./*
+æˆ–ï¼štar -zcvf xxx.tar.gz /test/* æˆ–ï¼štar -zcvf xxx.tar.gz *.txt  æˆ–ï¼štar -zcvf xxx.tar.gz ./*
 tar -xvf xxx.tar.gz
-tar -xvf xxx.tar.gz -C /usr    -C´ú±íÖ¸¶¨½âÑ¹µÄÎ»ÖÃ
-pwd  ÏÔÊ¾µ±Ç°ËùÔÚÎ»ÖÃ
+tar -xvf xxx.tar.gz -C /usr    -Cä»£è¡¨æŒ‡å®šè§£å‹çš„ä½ç½®
+pwd  æ˜¾ç¤ºå½“å‰æ‰€åœ¨ä½ç½®
 grep to sudo.conf --color
 chmod u=rwx,g=rw,o=r aaa.txt       chmod 764 aaa.txt
-rpmÓëÈí¼şÏà¹ØÃüÁî
+rpmä¸è½¯ä»¶ç›¸å…³å‘½ä»¤
 
-ctrl+l ÇåÆÁ
-ctrl+d ÍË³ömysql
+ctrl+l æ¸…å±
+ctrl+d é€€å‡ºmysql
 
 mkdir -pv ./abc/123
-more  b ·µ»ØÉÏÒ»ÆÁ
+more  b è¿”å›ä¸Šä¸€å±
 less -mN
 cp -r ./abc ./123
-cp -b a.txt b.txt  ½«Ö®Ç°µÄÎÄ¼ş±¸·İ
+cp -b a.txt b.txt  å°†ä¹‹å‰çš„æ–‡ä»¶å¤‡ä»½
 i shift+i
 a shift+a
 o shift+o
@@ -47,8 +47,8 @@ yy
 p
 gg shift+gg
 dd
-grep -i XXX log.txt ºöÂÔ´óĞ¡Ğ´
-ctrl+C ÍË³öping
+grep -i XXX log.txt å¿½ç•¥å¤§å°å†™
+ctrl+C é€€å‡ºping
 
 alter table person add tel varchar(10) not null;
 alter table person add tel varchar(10) not null first;
@@ -56,4 +56,3 @@ alter table person add tel varchar(10) not after age;
 alter table person drop tel,drop age;
 alter table person modify tel varchar(20) not null;
 alter table person change tel telphone varchar(20) not null;
-²âÊÔ
