@@ -56,3 +56,8 @@ alter table person add tel varchar(10) not after age;
 alter table person drop tel,drop age;
 alter table person modify tel varchar(20) not null;
 alter table person change tel telphone varchar(20) not null;
+
+cd .. 上一级目录
+cd 当前用户目录
+rmdir 删除空目录
+mv -f 强制覆盖
