@@ -18,8 +18,10 @@
     
 2. JDBC
      statement（父类）,prepareStatement（子累，更安全） 的区别
+     prepareStatement 提供预编译SQL语句，可以用"?" 来替换需要改变的参数值，类似于正则化 SQL查询语句。
+     createStatement则不提供预编译SQL，需要实时executeQuery（sqlStr） 来访问数据库。 因此，prepareStatement可以多次使用，提高访问数据库的效率
           
-     数据库事务隔离级别？ 四种哦！
+     数据库事务隔离级别？ 即原子性(Atomic)，一致性(Consistency)，隔离性(Isolation)，持久性(Durability)
 3. 数据结构
      二叉树
 4. 开源的一些框架
